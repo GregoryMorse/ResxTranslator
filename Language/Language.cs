@@ -518,6 +518,7 @@ namespace ResxTranslator
                     Thai,
                     Turkish,
                     Ukrainian,
+                    Urdu,
                     Vietnamese,
                     Welsh,
                     Yiddish,
