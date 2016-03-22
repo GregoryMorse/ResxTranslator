@@ -22,7 +22,7 @@ namespace ResxTranslator
             string translatedValue = string.Empty;
             try
             {
-                string languagePair = string.Format("en|{0}", targetLanguage.Value);
+                string languagePair = string.Format("en|{0}", new System.Globalization.CultureInfo(targetLanguage.Value).TwoLetterISOLanguageName);
                 // Get the translated value.
                 translatedValue = TranslateText(text, languagePair);
                 if (translatedValue.StartsWith("<html>")) translatedValue = string.Empty;
